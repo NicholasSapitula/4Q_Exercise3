@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Javascript Events and Functions</title>
+    </head>
+    <body>
+        <input type="text" id="num1" placeholder="Enter value of centimeter here"><br>
+        <input type="submit" value="COMPUTE" onclick="myFirstFunction()"><br>
+        <p id="id1"></p>
+        <script>
+            function myFirstFunction() {
+                var x = document.getElementById('num1').value;
+                var y = 0.0328084;
+                var answer = x * y;
+                document.getElementById('id1').innerHTML = "The value in feet will be " + answer;
+            }
+        </script>
+    </body>
+</html>
